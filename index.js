@@ -44,12 +44,20 @@ function setupEventListeners() {
   // Attach event listener to display user input in real-time as they type
   document.getElementById('textInput').addEventListener('input', displayUserInput)
 
+  // MOUSEOVER/MOUSEOUT Change Background Color Button
   document.getElementById('changeColorButton').addEventListener('mouseover', () => {
     document.getElementById('changeColorButton').style.backgroundColor = 'yellow';
 });
-
   document.getElementById('changeColorButton').addEventListener('mouseout', () => {
     document.getElementById('changeColorButton').style.backgroundColor = 'initial';
+});
+
+  // MOUSEOVER/MOUSEOUT Reset Background Color Button
+  document.getElementById('resetColorButton').addEventListener('mouseover', () => {
+    document.getElementById('resetColorButton').style.backgroundColor = 'orange';
+});
+  document.getElementById('resetColorButton').addEventListener('mouseout', () => {
+    document.getElementById('resetColorButton').style.backgroundColor = 'initial';
 });
 }
 
